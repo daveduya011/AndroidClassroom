@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.isidoreofseville.androidclassroom.PostContent"
+    android:background="@color/backgroundColor">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/postPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:paddingBottom="50dp"
+            android:paddingTop="40dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/authorProfile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:placeholderImage="@color/white"
+                android:layout_centerHorizontal="true"
+                app:placeholderImageScaleType="fitCenter"
+                app:roundAsCircle="true"
+                />
+
+            <TextView
+                android:id="@+id/authorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksandbold"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_below="@id/authorProfile"
+                />
+
+            <TextView
+                android:id="@+id/authorPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksandbold"
+                android:text=""
+                android:textColor="@color/lightblue"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_below="@id/authorName"
+                />
+
+            <TextView
+                android:id="@+id/postDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksandregular"
+                android:text=""
+                android:textColor="@color/lightblue"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_below="@id/authorPosition"
+                />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:fontFamily="@font/quicksandbold"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/postDate"
+                android:background="@drawable/bg_btn"
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:fontFamily="@font/quicksandbold"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="left"
+                android:layout_below="@id/category"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/messageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_below="@id/title"
+                >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/filesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_below="@id/messageLayout"
+                >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:fontFamily="@font/quicksandbold"
+                android:text="Replies:"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="left"
+                android:layout_below="@id/filesLayout"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/commentsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/comments"
+                android:layout_marginBottom="20dp"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fontFamily="@font/quicksandbold"
+        android:text="@string/backIcon"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/backgroundColor"
+        android:paddingBottom="3dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+            <TextView
+                android:id="@+id/command_like_text"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksandregular"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="0"
+                android:gravity="center"
+                />
+
+
+            <TextView
+                android:id="@+id/command_reply_text"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksandregular"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="reply"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/command_fav_text"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksandregular"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="favorite"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+            <ImageButton
+                android:id="@+id/command_like"
+                android:layout_weight="1"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_favorite_white_36dp"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:background="@null"
+                android:paddingBottom="20dp"
+                />
+
+            <ImageButton
+                android:id="@+id/command_reply"
+                android:layout_weight="1"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_reply_white_36dp"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:background="@null"
+                android:paddingBottom="20dp"
+                />
+
+            <ImageButton
+                android:id="@+id/command_fav"
+                android:layout_weight="1"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_white_36dp"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:background="@null"
+                android:paddingBottom="20dp"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/commentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:visibility="gone"
+        >
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/formComment"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input_post"
+            android:fontFamily="@font/quicksandbold"
+            android:inputType="textCapSentences|textMultiLine"
+            android:gravity="start"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:hint="Write Reply:"
+            android:textSize="13sp"
+            android:minLines="5"
+            android:maxLines="20"
+            android:layout_weight="0.9"
+            />
+
+        <Button
+            android:id="@+id/btnComment"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.1"
+            android:text="Reply"
+            android:background="@color/backgroundColor"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

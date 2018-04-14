@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_post_dark"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/authorProfile"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            app:placeholderImage="@color/white"
+            app:placeholderImageScaleType="fitCenter"
+            android:layout_marginTop="10dp"
+            app:roundAsCircle="true"
+            app:fadeDuration="0"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/authorName"
+            android:fontFamily="@font/quicksandbold"
+            android:text="Category"
+            android:textColor="@color/darkgray"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:layout_toRightOf="@id/authorProfile"
+            />
+
+        <TextView
+            android:id="@+id/postMessage"
+            android:fontFamily="@font/quicksandregular"
+            android:text="Category"
+            android:textColor="@color/darkgray"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_below="@id/authorName"
+            android:layout_toRightOf="@id/authorProfile"
+            />
+
+
+        <TextView
+            android:id="@+id/postDate"
+            android:fontFamily="@font/quicksandregular"
+            android:text="00/00/00"
+            android:textColor="@color/darkgray"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/postMessage"
+
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

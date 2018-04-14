@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#080631</color>
+    <color name="colorPrimaryDark">#080631</color>
+    <color name="colorPrimaryLight">#e2e2e2</color>
+    <color name="colorAccent">#ffa800</color>
+    <color name="orange">#ffb131</color>
+    <color name="redorange">#d77b31</color>
+    <color name="white">#ffffff</color>
+    <color name="semiwhite">#ebebeb</color>
+    <color name="gray">#4e4747</color>
+    <color name="darkgray">#2b2b2b</color>
+    <color name="navbarBg">#ac000318</color>
+    <color name="violet">#7805ff</color>
+    <color name="darkviolet">#560cac</color>
+    <color name="blue">#333ad7</color>
+    <color name="blue2">#070c67</color>
+    <color name="backgroundColor">#34325d</color>
+    <color name="lightblue">#7c99fa</color>
+    <color name="lightorange">#e8b95d</color>
+    <color name="black">#000000</color>
+    <color name="transparentWhite">#0affffff</color>
+    <color name="lightred">#f58270</color>
+    <color name="lightyellow">#fff45a</color>
+    <color name="semiwhite2">#e2e2e2</color>
+    <color name="darkgray_lighter">#5d5c5c</color>
+</resources>

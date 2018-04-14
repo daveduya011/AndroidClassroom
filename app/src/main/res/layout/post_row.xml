@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_post_dark"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/postTitle"
+            android:fontFamily="@font/quicksandbold"
+            android:text="Category"
+            android:textColor="@color/darkgray"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"/>
+
+        <TextView
+            android:id="@+id/postMessage"
+            android:fontFamily="@font/quicksandregular"
+            android:text="Category"
+            android:textColor="@color/darkgray"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/postDate"
+        android:fontFamily="@font/quicksandregular"
+        android:text="00/00/00"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:paddingLeft="20dp"
+        android:gravity="end"
+        android:layout_below="@id/linearLayout"
+        />
+
+    <TextView
+        android:id="@+id/postAuthorName"
+        android:fontFamily="@font/quicksandregular"
+        android:text="author"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:paddingRight="20dp"
+        android:gravity="start"
+        android:layout_below="@id/linearLayout"
+        />
+
+
+</RelativeLayout>

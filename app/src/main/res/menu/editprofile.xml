@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/menu_changeprofilepic"
+        android:title="Change Profile Picture"
+    />
+    <item android:id="@+id/menu_editcontact"
+        android:title="Edit Contact"
+    />
+    <item android:id="@+id/menu_editbio"
+        android:title="Edit Bio"
+    />
+    <item android:id="@+id/menu_updateemail"
+        android:title="Update Email Address"
+    />
+
+    <item android:id="@+id/menu_changebirthdate"
+        android:title="Change Birthday"
+    />
+
+    <item android:id="@+id/menu_changeusername"
+        android:title="Change Username"
+        />
+    <item android:id="@+id/menu_changepassword"
+        android:title="Change Password"
+        />
+
+</menu>

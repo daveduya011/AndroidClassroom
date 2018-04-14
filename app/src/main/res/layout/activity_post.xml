@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgray"
+    tools:context="com.isidoreofseville.androidclassroom.PostActivity">
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/quicksandbold"
+                android:text="Title"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/formPostTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/txtTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_input_post"
+                android:fontFamily="@font/quicksandbold"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:paddingLeft="16dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/quicksandbold"
+                android:text="Message"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:layout_below="@id/formPostTitle"
+                />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/formPostMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_input_post"
+                android:fontFamily="@font/quicksandbold"
+                android:gravity="top"
+                android:inputType="textCapSentences|textMultiLine"
+                android:padding="20dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="15sp"
+                android:layout_below="@id/txtMessage"
+                android:minLines="5"
+                android:maxLines="20"
+                />
+
+            <TextView
+                android:id="@+id/txtUploadFiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/quicksandbold"
+                android:text="Upload Files"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_below="@id/formPostMessage"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout_fileupload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/txtUploadFiles"
+                >
+
+                <ImageButton
+                    android:id="@+id/btn_uploadFile"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_attach_file_white_48dp"
+                    android:background="@color/gray"
+                    android:padding="14dp"
+                    android:layout_marginLeft="26dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_uploadImage"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_image_white_48dp"
+                    android:background="@color/gray"
+                    android:padding="14dp"
+                    android:layout_marginLeft="26dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_uploadFromCamera"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_a_photo_white_48dp"
+                    android:background="@color/gray"
+                    android:padding="14dp"
+                    android:layout_marginLeft="26dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    />
+
+
+            </LinearLayout>
+            
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_files_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_fileupload"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+            <TextView
+                android:id="@+id/txtCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/quicksandbold"
+                android:text="Category"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_below="@id/recycler_files_list"
+                />
+
+            <Spinner
+                android:id="@+id/cCategories"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/txtCategory"
+                android:background="@drawable/bg_input_post"
+                >
+            </Spinner>
+
+
+            <Button
+                android:id="@+id/btnPost"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_btn"
+                android:gravity="center"
+                android:text="POST"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:layout_below="@id/cCategories"
+                />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fontFamily="@font/quicksandbold"
+        android:text="@string/backIcon"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:paddingLeft="-20dp"
+        android:paddingTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

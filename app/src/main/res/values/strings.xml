@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">SPCF Classroom</string>
+    <string name="title_1">SPCF</string>
+    <string name="title_2">Classroom</string>
+    <string name="formUsername">ID/Username</string>
+    <string name="formPassword">Password</string>
+    <string name="backIcon">\u003c</string>
+    <string name="post">Announce</string>
+
+    <string-array name="categories">
+        <item>Room Announcement</item>
+        <item>Homework</item>
+        <item>Project</item>
+        <item>Event</item>
+        <item>Class Suspension</item>
+        <item>School Announcement</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="categories_student_canpost">
+        <item>Room Announcement</item>
+        <item>Homework</item>
+        <item>Project</item>
+        <item>Event</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string name="title_activity_nav_drawer">NavDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ADD_STUDENTS">ADD STUDENTS</string>
+    <string name="txtid">ID # (no dashes)</string>
+    <string name="txt_first_name">First Name</string>
+    <string name="txt_last_name">Last Name</string>
+    <string name="LOG_OUT">LOG OUT</string>
+</resources>

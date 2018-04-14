@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "419258134708",
+    "firebase_url": "https://spcf-class-announcement-system.firebaseio.com",
+    "project_id": "spcf-class-announcement-system",
+    "storage_bucket": "spcf-class-announcement-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419258134708:android:beaa7353fca3cd7c",
+        "android_client_info": {
+          "package_name": "com.isidoreofseville.spcfclassannouncementsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419258134708-i1504nejv0qq1la9vffkb1r79t3h854e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.isidoreofseville.spcfclassannouncementsystem",
+            "certificate_hash": "2bcc1a20a64fa5bf0c80c205dfbb222351d2f858"
+          }
+        },
+        {
+          "client_id": "419258134708-9i9d2d8g8mhve1k6890is3ijfhvaf8o9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeGEARv5jfBDjhuFVifSDJhiuDAHNdP38"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419258134708-9i9d2d8g8mhve1k6890is3ijfhvaf8o9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419258134708:android:15aac4bcdcd97eac",
+        "android_client_info": {
+          "package_name": "com.isidoreofseville.androidclassroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419258134708-if87qkjk3mhiuq8lfrufssddtm8fpv50.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.isidoreofseville.androidclassroom",
+            "certificate_hash": "2bcc1a20a64fa5bf0c80c205dfbb222351d2f858"
+          }
+        },
+        {
+          "client_id": "419258134708-9i9d2d8g8mhve1k6890is3ijfhvaf8o9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeGEARv5jfBDjhuFVifSDJhiuDAHNdP38"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419258134708-9i9d2d8g8mhve1k6890is3ijfhvaf8o9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

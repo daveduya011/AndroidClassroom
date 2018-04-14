@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_form_addstudent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    >
+
+                        <AutoCompleteTextView
+                            android:id="@+id/formFirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_input_addstudent"
+                            android:fontFamily="@font/quicksandbold"
+                            android:hint="@string/txt_first_name"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"
+                            android:textColor="@color/darkgray"
+                            android:textColorHint="@color/darkgray_lighter"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:layout_margin="3dp"
+                            />
+                        <AutoCompleteTextView
+                            android:id="@+id/formLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_input_addstudent"
+                            android:fontFamily="@font/quicksandbold"
+                            android:hint="@string/txt_last_name"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"
+                            android:textColor="@color/darkgray"
+                            android:textColorHint="@color/darkgray_lighter"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:layout_margin="3dp"
+                            />
+                        <AutoCompleteTextView
+                            android:id="@+id/formId"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_input_addstudent"
+                            android:fontFamily="@font/quicksandbold"
+                            android:hint="@string/txtid"
+                            android:imeOptions="actionNext"
+                            android:inputType="text|number"
+                            android:textColor="@color/darkgray"
+                            android:textColorHint="@color/darkgray_lighter"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:layout_margin="3dp"
+                            />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_check"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_check"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    />
+
+        </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.isidoreofseville.androidclassroom.LoginActivity">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:adjustViewBounds="true"
+        android:baselineAlignBottom="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ellipse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksandbold"
+                android:gravity="center_horizontal"
+                android:text="@string/title_1"
+                android:textColor="@color/colorAccent"
+                android:textSize="55sp" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title1"
+                android:fontFamily="@font/quicksandbold"
+                android:gravity="center_horizontal"
+                android:text="@string/title_2"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/formPostTitle"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/title1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/bg_input"
+                android:fontFamily="@font/quicksandbold"
+                android:gravity="center"
+                android:hint="@string/formUsername"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="14sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/formPostMessage"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/formPostTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_input"
+                android:fontFamily="@font/quicksandbold"
+                android:gravity="center"
+                android:hint="@string/formPassword"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnPost"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/formPostMessage"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_btn"
+                android:gravity="center"
+                android:text="LOGIN"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/title2"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="PROFILE">PROFILE</string>
+    <string name="MESSAGES">MESSAGES(0) (NA)</string>
+    <string name="FILES">FILES</string>
+    <string name="YOUR_POSTS">YOUR POSTS</string>
+    <string name="FAVORITES">FAVORITES</string>
+    <string name="SECTION">SECTION</string>
+    <string name="SETTINGS">SETTINGS (NA)</string>
+    <string name="ABOUT">ABOUT (NA)</string>
+    <string name="MANAGE_STUDENTS">MANAGE STUDENTS</string>
+
+</resources>
